@@ -1,0 +1,345 @@
+<!DOCTYPE html><html class="light" lang="it">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Esperienza PCTO - Progetto Sostenibilità</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error-container": "#93000a",
+                "inverse-primary": "#ffd8e8",
+                "on-primary-container": "#3d0027",
+                "surface-container": "#f8f0f3",
+                "outline": "#837379",
+                "on-secondary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fff8f9",
+                "on-error": "#ffffff",
+                "surface-variant": "#f2dee4",
+                "outline-variant": "#d5c2c8",
+                "inverse-surface": "#372e31",
+                "tertiary-container": "#9d5ca7",
+                "on-primary-fixed-variant": "#8a005f",
+                "secondary-fixed-dim": "#fbcfe8",
+                "primary-container": "#ffd8e8",
+                "surface-container-low": "#fff0f4",
+                "tertiary": "#81438c",
+                "background": "#fff8f9",
+                "on-tertiary": "#ffffff",
+                "on-primary": "#ffffff",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#ffade1",
+                "primary-fixed": "#ffd8e8",
+                "on-background": "#211a1d",
+                "secondary-container": "#ffd8e8",
+                "on-secondary-container": "#3d0027",
+                "on-tertiary-container": "#fffbff",
+                "on-secondary-fixed-variant": "#8a005f",
+                "on-secondary-fixed": "#3d0027",
+                "surface": "#fff8f9",
+                "on-surface-variant": "#514347",
+                "primary": "#b91d73",
+                "surface-tint": "#b91d73",
+                "inverse-on-surface": "#fbeef2",
+                "error": "#ba1a1a",
+                "tertiary-fixed": "#fed6ff",
+                "secondary": "#9b406b",
+                "surface-dim": "#e6d7db",
+                "on-primary-fixed": "#3d0027",
+                "on-tertiary-fixed-variant": "#6a2d75",
+                "secondary-fixed": "#ffd8e8",
+                "surface-container-high": "#f0e1e4",
+                "tertiary-fixed-dim": "#f6adff",
+                "on-surface": "#211a1d",
+                "on-tertiary-fixed": "#350041",
+                "surface-container-highest": "#f2dee4"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "16px",
+                "margin-desktop": "40px",
+                "gutter": "24px",
+                "container-max": "1280px",
+                "unit": "8px"
+        },
+        "fontFamily": {
+                "headline-lg": ["Hanken Grotesk"],
+                "headline-xl": ["Hanken Grotesk"],
+                "label-md": ["Hanken Grotesk"],
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "headline-md": ["Hanken Grotesk"],
+                "headline-lg-mobile": ["Hanken Grotesk"]
+        },
+        "fontSize": {
+                "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .experience-card-glow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .experience-card-glow:hover {
+            box-shadow: 0 10px 15px -3px rgba(185, 29, 115, 0.1), 0 4px 6px -2px rgba(185, 29, 115, 0.05);
+            border-color: #b91d73;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+
+<header class="bg-surface border-b border-outline-variant shadow-sm sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+    <div class="text-xl font-bold text-primary flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[24px]">school</span>
+        Milena Carrara <span class="text-sm font-normal text-on-surface-variant hidden sm:inline">| Portfolio PCTO</span>
+    </div>
+    <nav class="flex gap-6 h-full items-center">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 h-full flex items-center" href="index.html">Home</a>
+    </nav>
+</div>
+</header>
+
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-unit-8 my-6">
+<section class="relative rounded-[2rem] overflow-hidden text-on-primary mb-12 min-h-[320px] flex items-end p-8 md:p-16 bg-black/60">
+<img class="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-80" src="10.jpg" alt="Sfondo Progetto Sostenibilità">
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+<div class="relative z-20 max-w-3xl">
+    <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container mb-6 font-label-md text-label-md">
+        <span class="material-symbols-outlined mr-2 text-[18px]">analytics</span>
+        Statistica &amp; Giornalismo
+    </div>
+    <h1 class="font-headline-xl text-headline-xl mb-4 text-white drop-shadow-md">Project Work Sostenibilità</h1>
+    <p class="font-body-lg text-body-lg text-pink-100 opacity-95">Bergamo, IT — Analisi statistica ed elaborazione dati sul campo in collaborazione con il DESS Bergamo.</p>
+</div>
+</section>
+
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-8 space-y-12">
+    
+    <article>
+        <h2 class="font-headline-lg text-headline-lg mb-6 text-primary border-l-4 border-secondary pl-4">Descrizione dell'Esperienza</h2>
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant experience-card-glow transition-all space-y-4">
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Durante l'anno scolastico 2023/2024, nel periodo compreso tra l'8 aprile e il 31 maggio, ho partecipato attivamente a un Project Work incentrato sul tema cardine della sostenibilità ambientale. L'attività è stata inserita principalmente nell'orario scolastico durante delle ore di lezione del professor Sgrignoli, affiancate da lezioni pomeridiane e da momenti di lavoro autonomo finale mirati al controllo del materiale prima della consegna.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                L'intero progetto è stato guidato dal professor Sgrignoli in stretta sinergia con tre membri del Distretto dell'Economia Sociale e Solidale (DESS) di Bergamo: due scrittori e una progettista grafica. Questa collaborazione ci ha consentito di confrontarci direttamente con il mondo della comunicazione professionale, imparando i meccanismi redazionali necessari per dare vita a una rivista di settore.
+            </p>
+        </div>
+    </article>
+
+    <article>
+        <h2 class="font-headline-lg text-headline-lg mb-6 text-primary border-l-4 border-secondary pl-4">Diario di Bordo</h2>
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant space-y-8">
+            
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                    <div class="w-0.5 flex-grow bg-outline-variant my-2"></div>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Fase 1: Strutturazione del Sondaggio</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        Inizialmente, la nostra classe (3E) si è divisa in gruppi di lavoro cooperativi con l'obiettivo di strutturare delle domande mirate ad indagare le abitudini quotidiane degli studenti. Abbiamo mappato diverse aree tematiche legate alla sostenibilità, tra cui i trasporti, l'utilizzo dei libri scolastici e il consumo consapevole di energia e acqua all'interno dell'istituto. Le domande prodotte sono state selezionate e unificate in un unico sondaggio digitale inviato successivamente a tutta la popolazione scolastica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                    <div class="w-0.5 flex-grow bg-outline-variant my-2"></div>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Fase 2: Analisi Dati e Incontro con gli Esperti</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        In questa fase abbiamo incontrato i professionisti del DESS. Gli scrittori e la grafica ci hanno mostrato come viene concepito, impaginato e strutturato un giornale reale come "Infosostenibile", spiegandoci l'importanza delle infografiche per l'efficacia del messaggio. Successivamente, ogni gruppo ha preso in carico un set specifico di risposte raccolte dal sondaggio per elaborare i grafici statistici e avviare la stesura dell'articolo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                </div>
+                <div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Fase 3: Sintesi Editoriale e Pubblicazione</h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        L'obiettivo finale era produrre contenuti capaci di attrarre, informare e coinvolgere attivamente il lettore. Al termine della scrittura, gli esperti del DESS hanno selezionato i lavori più significativi svolti dalle classi partecipanti, organizzandoli e accorpandoli in un unico grande articolo redazionale, pubblicato ufficialmente all'interno del giornale "Infosostenibile" nelle settimane successive.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <article>
+        <h2 class="font-headline-lg text-headline-lg mb-6 text-primary border-l-4 border-secondary pl-4">Competenze Acquisite e Riflessioni</h2>
+        <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant experience-card-glow transition-all space-y-6">
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                La compilazione del report finale mi ha permesso di avviare una riflessione profonda sull'attività svolta, aiutandomi a focalizzare i traguardi raggiunti e il valore reale dell'esperienza per la mia crescita personale.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 bg-background rounded-xl border border-outline-variant">
+                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                        <span class="material-symbols-outlined">calculate</span> Matematica e Statistica
+                    </div>
+                    <p class="text-sm text-on-surface-variant">Ho applicato sul campo le conoscenze di statistica descrittiva: saper raccogliere, studiare ed elaborare flussi di dati complessi attraverso l'uso strutturato di tabelle, sondaggi e grafici di sintesi.</p>
+                </div>
+                <div class="p-4 bg-background rounded-xl border border-outline-variant">
+                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                        <span class="material-symbols-outlined">edit_note</span> Comunicazione Professionale
+                    </div>
+                    <p class="text-sm text-on-surface-variant">Ho imparato ad utilizzare un registro linguistico formale, chiaro e sintetico. Tradurre dati numerici complessi in frasi coincise è fondamentale per informare e interessare un lettore comune.</p>
+                </div>
+                <div class="p-4 bg-background rounded-xl border border-outline-variant">
+                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                        <span class="material-symbols-outlined">groups</span> Teamwork e Mediazione
+                    </div>
+                    <p class="text-sm text-on-surface-variant">Il lavoro di gruppo ha stimolato le mie abilità relazionali: ho imparato a comunicare correttamente, a sostenere le mie opinioni personali e, al contempo, a comprendere la prospettiva altrui per trovare il compromesso migliore.</p>
+                </div>
+                <div class="p-4 bg-background rounded-xl border border-outline-variant">
+                    <div class="flex items-center gap-2 text-primary font-bold mb-2">
+                        <span class="material-symbols-outlined">hourglass_top</span> Gestione del Tempo
+                    </div>
+                    <p class="text-sm text-on-surface-variant">Lavorare con scadenze editoriali reali e rigide mi ha insegnato l'importanza del time management, organizzando le fasi operative in autonomia per garantire la consegna puntuale del progetto.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</div>
+
+<aside class="md:col-span-4 space-y-gutter sticky top-24">
+    
+    <div class="bg-surface-container-high p-8 rounded-2xl border border-outline-variant shadow-sm">
+        <h4 class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant mb-6">Dati Progetto</h4>
+        <div class="space-y-6">
+            <div class="flex items-center justify-between border-b border-outline-variant/60 pb-3">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">calendar_today</span>
+                    <span class="font-body-md text-body-md text-on-surface-variant">Periodo</span>
+                </div>
+                <span class="font-headline-sm text-sm font-bold text-on-background">Aprile - Maggio 2024</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-outline-variant/60 pb-3">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">badge</span>
+                    <span class="font-body-md text-body-md text-on-surface-variant">Classe</span>
+                </div>
+                <span class="font-headline-sm text-base font-bold text-on-background">3E (Alunno M. Carrara)</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-outline-variant/60 pb-3">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">person</span>
+                    <span class="font-body-md text-body-md text-on-surface-variant">Tutor Scolastico</span>
+                </div>
+                <span class="font-headline-sm text-base font-bold text-on-background">Prof. Sgrignoli</span>
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">handshake</span>
+                    <span class="font-body-md text-body-md text-on-surface-variant">Partner Esterno</span>
+                </div>
+                <span class="font-headline-sm text-base font-bold text-on-background">DESS Bergamo</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant">
+        <h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[20px]">target</span> Obiettivo Formativo
+        </h4>
+        <p class="text-sm text-on-surface-variant leading-relaxed">
+            Saper applicare i modelli matematici e statistici a contesti reali di cittadinanza attiva, imparando a digitalizzare le informazioni e a collaborare all'interno di una redazione giornalistica per sensibilizzare la comunità sui comportamenti sostenibili.
+        </p>
+    </div>
+
+    <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant space-y-4">
+        <h4 class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">fact_check</span> Ambiti del Sondaggio
+        </h4>
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+            I dati raccolti all'interno dell'istituto scolastico hanno coperto i seguenti vettori di sostenibilità ecologica e logistica:
+        </p>
+        <table class="w-full text-left text-xs border-collapse">
+            <thead>
+                <tr class="border-b border-outline-variant text-primary font-bold">
+                    <th class="py-2">Ambito Canali</th>
+                    <th class="py-2 text-right">Strumenti</th>
+                </tr>
+            </thead>
+            <tbody class="text-on-surface-variant divide-y divide-outline-variant/40">
+                <tr>
+                    <td class="py-2 font-medium">Mobilità &amp; Trasporti</td>
+                    <td class="py-2 text-right">Questionario digitale</td>
+                </tr>
+                <tr>
+                    <td class="py-2 font-medium">Consumo Idrico ed Energetico</td>
+                    <td class="py-2 text-right">Tabelle di frequenza</td>
+                </tr>
+                <tr>
+                    <td class="py-2 font-medium">Libri e Riciclo Materiali</td>
+                    <td class="py-2 text-right">Grafici a barre / Infografiche</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</aside>
+</div>
+</main>
+
+<footer class="bg-surface-container-low border-t border-outline-variant mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto py-8 gap-4">
+    <div class="flex flex-col gap-1 text-center md:text-left">
+        <div class="font-bold text-primary font-headline-md text-base">PCTO Portfolio | Esame di Maturità 2026</div>
+        <p class="text-on-surface-variant text-xs opacity-80">Milena Carrara — Classe 3E — Anno Scolastico 2023/2024</p>
+    </div>
+    <div class="text-xs text-on-surface-variant text-center md:text-right">
+        © 2026 Portfolio Esperienze. Sviluppato in conformità alle linee guida ministeriali.
+    </div>
+</div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('shadow-md');
+            header.classList.remove('shadow-sm');
+        } else {
+            header.classList.add('shadow-sm');
+            header.classList.remove('shadow-md');
+        }
+    });
+</script>
+
+</body>
+</html>

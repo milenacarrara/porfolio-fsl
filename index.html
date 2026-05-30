@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PCTO Portfolio - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#006686",
+                    "on-primary": "#ffffff",
+                    "secondary": "#376479",
+                    "on-surface-variant": "#3f484e",
+                    "outline-variant": "#bec8ce",
+                    "background": "#f9f9ff",
+                    "on-background": "#111b2f",
+                    "surface": "#f9f9ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f1f3ff",
+                    // Configurazione dei nuovi abbinamenti di colore pastello richiesti
+                    "box-rosa": "#fce7f3",     // Rosa chiaro (Ora Project Work)
+                    "box-viola": "#f3e8ff",    // Viola chiaro (Ora Scuola Materna)
+                    "box-azzurro": "#e0f2fe"   // Azzurro chiaro (Ora Nottingham)
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px"
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased font-sans">
+
+<header class="bg-surface border-b border-outline-variant shadow-sm sticky top-0 z-50">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+        <div class="text-xl font-bold text-primary flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">terminal</span>
+            Milena Carrara <span class="text-sm font-normal text-secondary hidden sm:inline">| Portfolio PCTO</span>
+        </div>
+        <nav class="hidden md:flex gap-6 h-full items-center">
+            <a class="text-primary border-b-2 border-primary pb-1 font-bold h-full flex items-center" href="#">Home</a>
+            <a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 h-full flex items-center" href="#">Profilo</a>
+        </nav>
+        <button class="md:hidden flex items-center text-primary">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
+
+<main class="flex-grow">
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-flex bg-sky-100 text-primary px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider w-fit">
+                Esame di Maturità 2026
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-primary leading-tight">Il mio Percorso PCTO:<br>Competenze e Visione</h1>
+            <p class="text-base md:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Un viaggio di ben 127 ore formative attraverso experiences reali che collegano lo studio accademico informatico alle sfide del mondo professionale, sviluppando competenze tecniche e relazionali per il futuro.
+            </p>
+            <div class="pt-2">
+                <button class="bg-primary text-on-primary font-semibold rounded-lg px-6 py-3 hover:bg-secondary transition-colors shadow-sm inline-flex items-center gap-2">
+                    Esplora le Esperienze <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="flex-1 w-full relative rounded-xl overflow-hidden shadow-sm border border-outline-variant aspect-[4/3]">
+            <img alt="Statua di Robin Hood" class="w-full h-full object-cover object-center" src="0.jpg">
+        </div>
+    </section>
+
+    <section class="w-full px-margin-mobile md:px-margin-desktop py-16 bg-surface-container-low border-t border-outline-variant">
+        <div class="max-w-container-max mx-auto">
+            <div class="mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-on-background mb-2">Le mie Esperienze</h2>
+                <p class="text-on-surface-variant text-sm md:text-base">Seleziona una box per leggere il report dettagliato di ciascuna attività.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <a href="project_work.html" class="block h-full group">
+                    <article class="bg-box-rosa rounded-xl border border-pink-200 p-6 flex flex-col h-full shadow-sm hover:shadow-xl hover:border-pink-400 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-pink-200/80 text-pink-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">A.S. 2023/2024</span>
+                            <span class="material-symbols-outlined text-pink-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_forward</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-pink-950 mb-2">Project Work Sostenibilità</h3>
+                        <p class="text-sm text-pink-900/80 mb-4 flex-grow">Analisi statistica ed elaborazione dati tramite sondaggi scolastici per la creazione di grafici e articoli sulla rivista "Infosostenibile" con il DESS Bergamo.</p>
+                        <div class="border-t border-pink-300/40 pt-4 mt-auto font-medium text-pink-900 text-xs flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">bar_chart</span> Statistica e Data Visualization
+                        </div>
+                    </article>
+                </a>
+
+                <a href="scuola_materna.html" class="block h-full group">
+                    <article class="bg-box-viola rounded-xl border border-purple-200 p-6 flex flex-col h-full shadow-sm hover:shadow-xl hover:border-purple-400 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-purple-200/80 text-purple-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Giugno 2024</span>
+                            <span class="material-symbols-outlined text-purple-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_forward</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-950 mb-2">Stage Scuola Materna</h3>
+                        <p class="text-sm text-purple-900/80 mb-4 flex-grow">Affiancamento alla gestione quotidiana ad Alzano Lombardo. Focus su problem solving autonomo, organizzazione dei flussi e comunicazione interpersonale.</p>
+                        <div class="border-t border-purple-300/40 pt-4 mt-auto font-medium text-purple-900 text-xs flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">groups</span> Problem Solving & Teamwork
+                        </div>
+                    </article>
+                </a>
+
+                <a href="nottingham.html" class="block h-full group">
+                    <article class="bg-box-azzurro rounded-xl border border-sky-200 p-6 flex flex-col h-full shadow-sm hover:shadow-xl hover:border-sky-400 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-sky-200/80 text-sky-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Settembre 2024</span>
+                            <span class="material-symbols-outlined text-sky-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">arrow_forward</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-sky-950 mb-2">Stage Estero Nottingham</h3>
+                        <p class="text-sm text-sky-900/80 mb-4 flex-grow">Attività aziendale e logistica presso Cancer Research UK a Sherwood. Sviluppo del ritmo lavorativo e comunicazione interamente in lingua inglese.</p>
+                        <div class="border-t border-sky-300/40 pt-4 mt-auto font-medium text-sky-900 text-xs flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">language</span> English Communication & Logistics
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-surface-container-low border-t border-outline-variant w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full py-6 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-4">
+        <div class="font-bold text-primary text-base">PCTO Portfolio | Milena Carrara</div>
+        <div class="text-xs text-on-surface-variant text-center md:text-left">© 2026 Percorsi di Eccellenza e Orientamento.</div>
+    </div>
+</footer>
+
+</body>
+</html>
